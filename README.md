@@ -1,37 +1,66 @@
 # Customer Shopping Behavior Analysis
 
-An end-to-end Data Analytics project that analyzes customer shopping behavior using **Python**, **PostgreSQL**, **SQL**, and **Power BI**.
+An end-to-end **Data Analytics** project that analyzes customer shopping behavior using **Python, PostgreSQL, SQL, and Power BI**. The project transforms raw transactional data into actionable business insights through data cleaning, SQL analysis, customer segmentation, and interactive dashboard visualization.
 
-The project focuses on understanding customer purchasing patterns, identifying high-value customer segments, evaluating sales trends, and generating business recommendations through interactive dashboards.
+---
+
+## Dashboard Preview
+
+> **Note:** Upload a screenshot of your Power BI dashboard to the repository and replace the image path below.
+
+![Dashboard](dashboard.png)
 
 ---
 
 ## Project Overview
 
-This project analyzes over **3,900 customer purchase records** to answer key business questions related to:
+Retail businesses generate large amounts of customer transaction data every day. This project analyzes over **3,900 customer purchase records** to understand shopping patterns, customer demographics, spending behavior, subscription trends, and product performance.
 
-- Customer demographics
-- Product preferences
-- Revenue analysis
-- Subscription behavior
-- Customer loyalty
-- Discounts & promotions
-- Shopping trends
-- Sales performance
+The objective is to help businesses make data-driven decisions by identifying meaningful trends and providing actionable recommendations.
 
-The objective is to transform raw transactional data into actionable business insights for decision-makers.
+---
+
+## Business Problem
+
+A retail company wants to better understand customer shopping behavior in order to:
+
+- Improve customer engagement
+- Increase sales
+- Identify high-value customer segments
+- Optimize marketing campaigns
+- Improve customer retention
+- Understand purchasing trends
+
+---
+
+## Dataset Summary
+
+- **Total Records:** 3,900
+- **Features:** 18
+- Customer Demographics
+- Purchase Details
+- Product Categories
+- Subscription Status
+- Shipping Information
+- Discounts & Promotions
+- Customer Ratings
 
 ---
 
 ## Tech Stack
 
-- Python
-- Pandas
-- NumPy
-- PostgreSQL
-- SQL
-- Power BI
-- Git & GitHub
+- **Python**
+  - Pandas
+  - NumPy
+
+- **Database**
+  - PostgreSQL
+
+- **SQL**
+
+- **Power BI**
+
+- **Git & GitHub**
 
 ---
 
@@ -46,7 +75,11 @@ Python
       │
       ▼
 PostgreSQL
-(Database & SQL Analysis)
+(Database Integration)
+      │
+      ▼
+SQL
+(Business Analysis)
       │
       ▼
 Power BI
@@ -60,22 +93,25 @@ Business Insights & Recommendations
 
 ## Data Preparation (Python)
 
-Performed data preprocessing using Pandas:
+The dataset was cleaned and transformed using Python.
 
-- Imported and explored the dataset
+Tasks performed:
+
+- Imported dataset using Pandas
+- Explored data structure and summary statistics
 - Handled missing values
-- Renamed columns using snake_case
-- Feature engineering
+- Standardized column names
+- Feature Engineering
   - Age Groups
   - Purchase Frequency
-- Removed redundant features
-- Loaded cleaned dataset into PostgreSQL
+- Removed redundant columns
+- Exported cleaned dataset to PostgreSQL
 
 ---
 
 ## SQL Analysis
 
-Performed business-oriented SQL analysis including:
+Business-oriented SQL queries were written to answer important questions such as:
 
 - Revenue by Gender
 - High-Spending Discount Users
@@ -92,12 +128,15 @@ Performed business-oriented SQL analysis including:
 
 ## Power BI Dashboard
 
-The dashboard provides interactive visualizations including:
+The interactive dashboard includes:
 
-- KPI Cards
-  - Total Customers
-  - Average Purchase Amount
-  - Average Review Rating
+### KPI Cards
+
+- Total Customers
+- Average Purchase Amount
+- Average Customer Rating
+
+### Visualizations
 
 - Revenue by Category
 - Sales by Category
@@ -105,33 +144,63 @@ The dashboard provides interactive visualizations including:
 - Sales by Age Group
 - Subscription Distribution
 
-Interactive slicers include:
+### Interactive Filters
 
 - Gender
-- Category
-- Shipping Type
+- Product Category
 - Subscription Status
+- Shipping Type
 
 ---
 
-## Key Business Insights
+## Business Questions Answered
 
-- Clothing category generated the highest revenue.
-- Loyal customers contributed significantly to overall sales.
-- Express shipping customers showed slightly higher average purchase values.
-- Certain products relied heavily on discounts for sales.
-- Young Adults generated the highest revenue among all age groups.
-- Customer subscriptions presented opportunities for increasing long-term retention.
+- Which customer segment generates the highest revenue?
+- Which products receive the highest ratings?
+- Do subscribers spend more than non-subscribers?
+- Which age group contributes the highest revenue?
+- Which products rely heavily on discounts?
+- Which shipping method generates higher purchase values?
+
+---
+
+## Key Insights
+
+- Clothing generated the highest overall revenue.
+- Young Adults contributed the highest revenue among all age groups.
+- Loyal customers formed the largest customer segment.
+- Express shipping customers spent slightly more on average.
+- Some products showed heavy dependence on discounts.
+- Subscription programs have opportunities for improving customer retention.
 
 ---
 
 ## Business Recommendations
 
 - Strengthen customer loyalty programs.
-- Offer exclusive subscription benefits.
-- Optimize discount strategies to protect profit margins.
-- Promote top-rated products through targeted marketing.
-- Personalize campaigns for high-value customer segments.
+- Promote exclusive subscription benefits.
+- Optimize discount strategies.
+- Increase visibility of top-rated products.
+- Target high-value customer segments through personalized marketing.
+
+---
+
+## Skills Demonstrated
+
+- Python
+- Pandas
+- NumPy
+- PostgreSQL
+- SQL
+- Power BI
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Customer Segmentation
+- Business Intelligence
+- Dashboard Development
+- Data Visualization
+- Business Analytics
 
 ---
 
@@ -140,57 +209,31 @@ Interactive slicers include:
 ```
 customer-shopping-behavior-analysis/
 │
-├── data/
-│   ├── raw_dataset.csv
-│   └── cleaned_dataset.csv
-│
-├── python/
-│   ├── data_cleaning.py
-│   └── feature_engineering.py
-│
-├── sql/
-│   ├── schema.sql
-│   ├── data_import.sql
-│   └── business_queries.sql
-│
-├── powerbi/
-│   └── customer_behavior_dashboard.pbix
-│
-├── report/
-│   └── Customer Shopping Behavior Analysis.pdf
-│
-├── screenshots/
-│   └── dashboard.png
-│
-├── README.md
-└── requirements.txt
+├── Business Problem Document.pdf
+├── Customer-Shopping-Behavior-Analysis.pptx
+├── Customer_behavior_analysis.ipynb
+├── customer_behavior_analysis.sql
+├── customer_behavior_dashboard.pbix
+├── customer_shopping_behavior.csv
+└── README.md
 ```
-
----
-
-## Skills Demonstrated
-
-- Data Cleaning
-- Exploratory Data Analysis
-- Feature Engineering
-- SQL Query Writing
-- Database Management
-- Business Intelligence
-- Dashboard Development
-- Data Visualization
-- Business Analytics
-- Customer Segmentation
 
 ---
 
 ## Future Improvements
 
 - Customer Lifetime Value (CLV) Analysis
-- RFM Segmentation
-- Sales Forecasting using Machine Learning
+- RFM Customer Segmentation
+- Sales Forecasting
 - Recommendation System
 - Customer Churn Prediction
 - Automated ETL Pipeline
+
+---
+
+## Project Outcome
+
+This project demonstrates the complete data analytics lifecycle—from raw data preprocessing and SQL-based business analysis to interactive Power BI dashboard development. It showcases practical skills in Python, SQL, PostgreSQL, and Business Intelligence for solving real-world retail analytics problems.
 
 ---
 
@@ -200,10 +243,11 @@ customer-shopping-behavior-analysis/
 
 BITS Pilani, Hyderabad Campus
 
-Interested in:
+**Interested in:**
+
 - Data Analytics
 - Business Intelligence
 - Financial Analytics
 - Data Science
 
-Feel free to connect and share feedback!
+If you found this project helpful, feel free to ⭐ the repository.
